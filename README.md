@@ -2,28 +2,33 @@
 
 This application backs up your contacts. It takes a list of contacts in the form of an object file and stores them. 
 
-##Run Locally
+### Run Locally
 
 clone the project
 
-#### HTTPS
+##### https
 ```bash
  git clone https://github.com/tebogoditse/contacts-app.git
 ```
 
-#### SSH
+##### ssh
 ```bash
  git clone git@github.com:tebogoditse/contacts-app.git
 ```
 
-CD into Directory
+### CD into Directory
 ```bash
  cd contacts-app
 ```
 
-Install Dependencies
+### Install Dependencies
 
-#### Install with npm
+Install with npm
 ```bash 
  npm install
+```
+
+### Start Server
+```bash
+ npm start
 ```
