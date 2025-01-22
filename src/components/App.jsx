@@ -2,31 +2,24 @@ import React from "react";
 import contacts from "../contacts";
 import Card from "./Card";
 
+function createCard(card) {
+  return (
+    <Card
+      name = {card.name}
+      img = {card.imgURL}
+      phone = {card.phone}
+      email = {card.email} 
+    />
+  )
+}
+
 function App() {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
-      
-      <Card 
-      name={contacts[1].name}
-      img={contacts[1].imgURL}
-      phone={contacts[1].phone}
-      email={contacts[1].email}
-      />
-      <Card 
-      name={contacts[2].name}
-      img={contacts[2].imgURL}
-      phone={contacts[2].phone}
-      email={contacts[2].email}
-      />
-      <Card 
-      name={contacts[3].name}
-      img={contacts[3].imgURL}
-      phone={contacts[3].phone}
-      email={contacts[3].email}
-      />
+      {contacts.map(createCard)}
     </div>
   );
 }
 
-//export default App;
+export default App;
